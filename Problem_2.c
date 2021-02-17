@@ -7,12 +7,18 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,i,n1=0,n2=1,nextTerm;
     printf("Enter the value for n\n");
     scanf("%d", &n);
+    printf("Fabonacci Series: ");
 
     //Write your code here
-    
-
-    return 0;
+    for(i=1;i<=n;i++)
+    {
+      printf("%d",n1);
+      nextTerm = n1 +n2;
+      n1 = n2;
+      n2 = nextTerm;
+    }
+  return 0;
 }
